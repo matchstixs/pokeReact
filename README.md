@@ -1,4 +1,18 @@
  TO DO-
--pokelist is main component
-    -need to map state to props
-    Line 24:  'store' is not defined
+-api action call
+
+
+
+
+
+
+
+
+
+
+<!-- FIXED ERRORS -->
+
+TypeError: _this.props.fetchPokemon is not a function
+-----------------------------------------------
+FIXED BY JUST PASSING FUNCTION AS onClick={functionName}
+

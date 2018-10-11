@@ -2,56 +2,25 @@
 // MADE AFTER REDUCER
 
 import axios from 'axios';
-import { FETCH_POKEMON } from './types';
-// import { FETCH_POKEMON, FETCH_POKEMON_FAILED } from './types';
-// IMPORT ACTION TYPES ^
+
+export const FETCH_POKEMON = 'FETCH_POKEMON'
+export const FETCH_POKEMON_FAILED = 'FETCH_POKEMON_FAILED';
+// EXPORT ACTION TYPES
 
 // ACTION CREATORS
-export const fetchPokemonType = 'FETCH_POKEMON_SUCCESS'
-
 export const fetchPokemon = () => {
-    console.log('fetching api')
-    return function (dispatch) {
-        dispatch ({ type: FETCH_POKEMON})
-        axios.get('https://pokeapi.co/api/v2/pokemon-species/')
-        .then(function(response) {
-            dispatch ({ type: fetchPokemonType, payload: response.data})
-        })     
-    }
-}
-
-// export const fetchPokemonType = (pokemon) => {
-//     return {
-//         type: FETCH_POKEMON,
-//         payload: {pokemon}
-//     }
-// }
-    
-// export const fetchPokemon = () => {
-//     return (dispatch) => {
-//         return axios.get('https://pokeapi.co/api/v2/pokemon-species/')
-//             .then(response => {
-//                 dispatch(fetchPokemonSuccess(response.data))
-//             })
-//             .catch(error => {
-//                 throw(error)
-//             })
-//     }
-// }
-    
-// return function (dispatch){
-//     return API.fetchComments(postId).then(comments => {
-//     // dispatch
-//       dispatch( {
-//         type: BIND_COMMENTS,
-//         comments,
-//         postId
-//       })
-//     })
-//   }
-
-// DISPATCH IS UNDEFINED
-
+    console.log('fetching data')
+    return dispatch => {
+        const pApi = axios.get('https://pokeapi.co/api/v2/pokemon-species/')
+        console.log(pApi)
+        .then(response => dispatch ({ 
+            type : fetchPokemon, payload: response.data
+            })
+        .catch(error => {
+            throw(error)
+            })
+        )}
+};
 
 
 
