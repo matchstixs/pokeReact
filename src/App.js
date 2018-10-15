@@ -4,7 +4,7 @@ import { BrowserRouter, Route} from 'react-router-dom';
 
 // IMPORT ALL COMPONENTS 
 import Pokedex from './components/Pokedex'
-import PokeStats from './components/PokeStats'
+import PokeStats from './components/Pokedex/PokeStats'
 
 // IMPORT PROVIDER
 // GIVES ACCESS TO ALL COMPONENTS TO ACCESS THE STORE

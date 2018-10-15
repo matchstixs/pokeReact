@@ -1,6 +1,12 @@
  TO DO-
--api action call
+-get api action response to show up
 
+TypeError: Cannot read property 'map' of undefined
+  25 |     {this.props.fetchPokemon.map((pokemon) => (
+  26 |         <li key = {pokemon.url}>
+  27 |             {pokemon.name}
+
+fetchPokemon is undefined??
 
 
 

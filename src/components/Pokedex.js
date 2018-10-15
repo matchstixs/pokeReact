@@ -1,6 +1,6 @@
 // PRESENTATIONAL COMPONENT
 import React from 'react';
-import PokeList from './PokeList'
+import PokeList from './Pokedex/PokeList'
 
 const Pokedex = () => {
     return (
