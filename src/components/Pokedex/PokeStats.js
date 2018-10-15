@@ -1,3 +1,5 @@
+// FUNCTIONAL COMPONENT
+
 import React from 'react';
 
 const PokeStats = () => {

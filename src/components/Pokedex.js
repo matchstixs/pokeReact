@@ -1,3 +1,4 @@
+// PRESENTATIONAL COMPONENT
 import React from 'react';
 import PokeList from './PokeList'
 

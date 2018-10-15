@@ -3,8 +3,10 @@
 
 import { combineReducers } from 'redux';
 
-import pokemonList from './pokeList-reducer';
+import { pokemonFailed, pokemonLoad, pokemon} from './pokeList-reducer';
 
 export default combineReducers ({
-  pokemonList,
+  pokemonFailed,
+  pokemonLoad,
+  pokemon
 });
