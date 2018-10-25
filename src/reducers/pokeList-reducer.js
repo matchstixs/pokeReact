@@ -7,32 +7,19 @@ const initialState = {
     error: null
 }
 
-export const pokemonFailed = (state = false, action) => {
+export default pokemon = (state = initialState, action) => {
     switch(action.type) {
         case POKEMON_FAILURE:
-            return action.failure;
-        default:
-            return state;
-    }
-}
-
-export const pokemonLoad = (state = false, action) => {
-    switch(action.type) {
+            default:
+                return state;
         case POKEMON_LOAD:
-            return action.load;
-        default:
-            return state;
-    }
-}
-
-export const pokemon = (state = initialState, action) => {
-    switch(action.type){
+            default:
+                return state;
         case POKEMON_SUCCESS:
-            return {
-                ...state,
-                pokemon: action.pokemon
-            }
-        default:
-            return state;
-    }
-}
+            default:
+                return {
+                    ...state,
+                    pokemon: action.payload
+                };
+    };
+};

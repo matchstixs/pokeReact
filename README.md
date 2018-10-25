@@ -15,7 +15,13 @@ TypeError: this.props.fetchPokemon is not a function
   12 |     }
   13 | 
 
-
+<!-- IDEA -->
+initial state of pokemon should be list of pokemons 
+-this api call should live in pokedex
+-rendered onto child component pokelist 
+-action will render pokestat component 
+-----------------
+initial state should not live in pokelist
 
 
 

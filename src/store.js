@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 // ^ALLOWS DISPATCH TO BE CALLED IN ACTIONS
 import reducers from './reducers';
 
-const initialState = {};
+const initialState = { pokemon: undefined };
 
 const middleware = [thunk]
 

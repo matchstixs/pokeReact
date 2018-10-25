@@ -28,10 +28,10 @@ export const pokemon_load = (bool) => {
 }
 
 export const pokemon_sucess = (pokemon) => {
-    return {
-      type: POKEMON_SUCCESS,
-        payload: pokemon
-    };
+  return {
+    type: 'POKEMON_SUCCESS',
+    payload: pokemon
+  };
 }
 
 // API CALL

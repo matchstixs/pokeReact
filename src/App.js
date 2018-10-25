@@ -19,7 +19,7 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
         <div>
-          <Route path='/' component={Pokedex}/>
+          <Route path='/' component={Pokedex } />
           <Route path='/idStats' component={PokeStats}/>
         </div>
         </BrowserRouter>
