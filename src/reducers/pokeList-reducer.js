@@ -10,10 +10,8 @@ const initialState = {
 export default pokemon = (state = initialState, action) => {
     switch(action.type) {
         case POKEMON_FAILURE:
-            default:
                 return state;
         case POKEMON_LOAD:
-            default:
                 return state;
         case POKEMON_SUCCESS:
             default:
