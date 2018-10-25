@@ -7,7 +7,7 @@ const initialState = {
     error: null
 }
 
-export default pokemon = (state = initialState, action) => {
+export default function reducer (state = initialState, action) {
     switch(action.type) {
         case POKEMON_FAILURE:
                 return state;
@@ -19,5 +19,5 @@ export default pokemon = (state = initialState, action) => {
                     ...state,
                     pokemon: action.payload
                 };
-    };
+    }
 };

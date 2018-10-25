@@ -3,7 +3,7 @@
 
 import { combineReducers } from 'redux';
 
-import { pokemon } from './pokeList-reducer';
+import pokemon from './pokeList-reducer';
 
 export default combineReducers ({
   pokemon

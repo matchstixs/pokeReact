@@ -8,7 +8,6 @@ import { bindActionCreators } from 'redux';
 
 class PokeList extends React.Component {
     componentDidMount() {
-        this.props.fetchPokemon()
     }
 
     render() {
@@ -18,15 +17,9 @@ class PokeList extends React.Component {
         if (this.props.load) {
             return <p> fetch load </p>
         }
-
         return(
         <div>
             <p>~pokelist component~</p>
-            {this.props.fetchPokemon.map((pokemon) => (
-                <li key = {pokemon.url}>
-                    {pokemon.name}
-                </li>
-            ))}
         </div>
         )
     };
