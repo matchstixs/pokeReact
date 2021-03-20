@@ -1,0 +1,19 @@
+.list-group {
+    list-style-type: none;
+}
+
+.pokemon-image {
+    width: 100%;
+}
+
+.search {
+    text-align:right;
+}
+
+.pokedex-text{
+    text-align:center
+}
+
+.app-title {
+    text-align:center;
+}

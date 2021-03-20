@@ -1,36 +1,20 @@
- TO DO-
--get api action response to show up
+Pokedex app built on react using pokeapi
+material-ui
+react-hooks
 
-TypeError: Cannot read property 'map' of undefined
->  25 |     {this.props.fetchPokemon.map((pokemon) => (
-  26 |         <li key = {pokemon.url}>
-  27 |             {pokemon.name}
-
-fetchPokemon is undefined??
-
-TypeError: this.props.fetchPokemon is not a function
-  9 | class PokeList extends React.Component {
-  10 |     componentDidMount() {
-> 11 |         this.props.fetchPokemon()
-  12 |     }
-  13 | 
-
-<!-- IDEA -->
-initial state of pokemon should be list of pokemons 
--this api call should live in pokedex
--rendered onto child component pokelist 
--action will render pokestat component 
------------------
-initial state should not live in pokelist
+- [x] pokedex ui design
+- [X] app functionality components (list, detail)
+- [X] RESTful api request (CRUD)
+- [X] search bar
 
 
 
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-<!-- FIXED ERRORS -->
+In the project directory, you can run:
 
-TypeError: _this.props.fetchPokemon is not a function
------------------------------------------------
-FIXED BY JUST PASSING FUNCTION AS onClick={functionName}
-
+### `npm start`
